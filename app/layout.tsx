@@ -11,11 +11,11 @@ const crimsonText = Crimson_Text({
 
 export const metadata: Metadata = {
   title: 'Catálogo de milagros tristes - Cuentos Urbanos y Melancólicos',
-  description: 'Una colección cruda y honesta de relatos que exploran la belleza en la desolación urbana, el amor perdido y los pequeños milagros que emergen de la tristeza cotidiana.',
-  keywords: 'libro, cuentos urbanos, literatura melancólica, realismo sucio, narrativa contemporánea, ficción urbana, Amazon',
-  authors: [{ name: 'Autor' }],
-  creator: 'Autor',
-  publisher: 'Editorial Independiente',
+  description: '"Catálogo de milagros tristes" es una colección de relatos breves y prosa poética que navega entre el amor y la pérdida, la nostalgia y la esperanza. En estas páginas, un beso puede detener el tiempo, un hombre se transforma en árbol por fidelidad a una promesa, y criaturas extrañas aparecen justo cuando el alma más lo necesita. Cada historia es un suspiro, un eco de lo que fuimos y lo que anhelamos ser.',
+  keywords: 'libro, cuentos urbanos, literatura melancólica, realismo magico, narrativa contemporánea, ficción urbana, romance',
+  authors: [{ name: 'E. Saav' }],
+  creator: 'E. Saav',
+  publisher: 'Amazon',
   openGraph: {
     type: 'website',
     locale: 'es_ES',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     siteName: 'Catálogo de milagros tristes',
     images: [
       {
-        url: 'https://images.pexels.com/photos/1029141/pexels-photo-1029141.jpeg',
+        url: 'https://m.media-amazon.com/images/I/716gxQ5Nf8L._SL1500_.jpg',
         width: 1200,
         height: 630,
         alt: 'Catálogo de milagros tristes - Portada del libro',
@@ -36,8 +36,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Catálogo de milagros tristes - Cuentos Urbanos y Melancólicos',
     description: 'Una colección cruda y honesta de relatos que exploran la belleza en la desolación urbana y los pequeños milagros que emergen de la tristeza.',
-    images: ['https://images.pexels.com/photos/1029141/pexels-photo-1029141.jpeg'],
-    creator: '@autor_escritor',
+    images: ['https://m.media-amazon.com/images/I/716gxQ5Nf8L._SL1500_.jpg'],
+    creator: '@eduar766',
   },
   robots: {
     index: true,
@@ -72,9 +72,9 @@ export default function RootLayout({
               "name": "Catálogo de milagros tristes",
               "author": {
                 "@type": "Person",
-                "name": "Autor"
+                "name": "E. Saav"
               },
-              "description": "Una colección cruda y honesta de relatos que exploran la belleza en la desolación urbana, el amor perdido y los pequeños milagros que emergen de la tristeza cotidiana.",
+              "description": "Catálogo de milagros tristes es una colección de relatos breves y prosa poética que navega entre el amor y la pérdida, la nostalgia y la esperanza. En estas páginas, un beso puede detener el tiempo, un hombre se transforma en árbol por fidelidad a una promesa, y criaturas extrañas aparecen justo cuando el alma más lo necesita. Cada historia es un suspiro, un eco de lo que fuimos y lo que anhelamos ser.",
               "genre": "Ficción urbana contemporánea",
               "inLanguage": "es",
               "publisher": {
@@ -85,24 +85,24 @@ export default function RootLayout({
                 {
                   "@type": "Offer",
                   "availability": "https://schema.org/InStock",
-                  "price": "12.99",
+                  "price": "5",
                   "priceCurrency": "EUR",
                   "seller": {
                     "@type": "Organization",
                     "name": "Amazon España"
                   },
-                  "url": "https://amazon.es/dp/example"
+                  "url": "https://www.amazon.es/dp/B0FG88X927"
                 },
                 {
                   "@type": "Offer",
                   "availability": "https://schema.org/InStock",
-                  "price": "14.99",
+                  "price": "5.90",
                   "priceCurrency": "USD",
                   "seller": {
                     "@type": "Organization",
                     "name": "Amazon US"
                   },
-                  "url": "https://amazon.com/dp/example"
+                  "url": "https://www.amazon.com/dp/B0FG88X927"
                 }
               ]
             })

@@ -45,7 +45,7 @@ export default function Home() {
               <div className="relative group">
                 <div className="absolute inset-0 bg-gradient-to-r from-amber-600 to-yellow-700 rounded-lg blur-3xl opacity-20 group-hover:opacity-30 transition-opacity duration-700"></div>
                 <img
-                  src="https://images.pexels.com/photos/1029141/pexels-photo-1029141.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  src="https://m.media-amazon.com/images/I/716gxQ5Nf8L._SL1500_.jpg"
                   alt="Catálogo de milagros tristes - Portada del libro"
                   className="relative w-80 h-auto rounded-lg shadow-urban hover-lift filter sepia-[0.3] contrast-110"
                   loading="eager"
@@ -88,9 +88,7 @@ export default function Home() {
                 transition={{ duration: 0.8, delay: 1.2 }}
                 className="text-lg text-gray-200 leading-relaxed max-w-2xl font-light"
               >
-                Una colección cruda y honesta de relatos que exploran la belleza 
-                en la desolación urbana, el amor perdido en bares de medianoche 
-                y los pequeños milagros que emergen de la tristeza cotidiana.
+                <span className="text-amber-warm">Catálogo de milagros tristes</span> es una colección de relatos breves y prosa poética que navega entre el amor y la pérdida, la nostalgia y la esperanza. En estas páginas, un beso puede detener el tiempo, un hombre se transforma en árbol por fidelidad a una promesa, y criaturas extrañas aparecen justo cuando el alma más lo necesita. Cada historia es un suspiro, un eco de lo que fuimos y lo que anhelamos ser.
               </motion.p>
 
               <motion.div
@@ -104,7 +102,7 @@ export default function Home() {
                   className="bg-amber-warm hover:bg-amber-600 text-charcoal px-8 py-4 rounded-none shadow-whiskey hover-lift transition-all duration-300 font-semibold tracking-wide"
                   asChild
                 >
-                  <a href="https://amazon.es/dp/example" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.amazon.es/dp/B0FG88X927" target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="w-5 h-5 mr-2" />
                     Amazon España
                   </a>
@@ -116,7 +114,7 @@ export default function Home() {
                   className="border-2 border-amber-warm text-amber-warm hover:bg-amber-warm hover:text-charcoal px-8 py-4 rounded-none hover-lift transition-all duration-300 font-semibold tracking-wide bg-transparent"
                   asChild
                 >
-                  <a href="https://amazon.com/dp/example" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.amazon.com/dp/B0FG88X927" target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="w-5 h-5 mr-2" />
                     Amazon US
                   </a>
@@ -172,12 +170,12 @@ export default function Home() {
           >
             <motion.div variants={fadeInUp} className="text-center mb-20">
               <h2 className="text-4xl md:text-6xl font-serif font-bold text-charcoal mb-8">
-                En estas páginas vive la ciudad
+                En estas páginas vive un corazón
               </h2>
               <p className="text-xl text-steel max-w-3xl mx-auto leading-relaxed font-light">
                 Cada cuento es un fragmento de asfalto, una conversación de bar, 
-                un momento de soledad urbana donde lo extraordinario se esconde 
-                en lo mundano.
+                un momento de soledad donde lo extraordinario se esconde 
+                en las cosas mas sencillas como un cafe, o un beso que detiene el tiempo.
               </p>
             </motion.div>
 
@@ -192,11 +190,7 @@ export default function Home() {
                       </h3>
                     </div>
                     <blockquote className="text-steel leading-relaxed font-light border-l-4 border-amber-warm pl-6 text-lg">
-                      "El café estaba frío hace una hora, pero seguía ahí, 
-                      como yo, como la camarera que había visto demasiadas 
-                      noches como esta. En la mesa de al lado, un tipo 
-                      escribía cartas que nunca enviaría. Todos éramos 
-                      fantasmas esperando el amanecer..."
+                      "No fue fácil, pero aprendí a decir “Te quiero” con un beso en la mejilla, lástima que para ti solo fuese un beso en la mejilla. "
                     </blockquote>
                   </CardContent>
                 </Card>
@@ -212,11 +206,7 @@ export default function Home() {
                       </h3>
                     </div>
                     <blockquote className="text-steel leading-relaxed font-light border-l-4 border-steel pl-6 text-lg">
-                      "Cada cigarrillo era una pequeña muerte, cada calada 
-                      un segundo menos de vida, pero en ese momento, 
-                      parado bajo la lluvia, fumando y recordándote, 
-                      sentí que por fin estaba vivo. Los milagros a veces 
-                      vienen disfrazados de autodestrucción..."
+                      "Explota cuando debes explotar. Si, porque si dejas almacenar todo eso que te oprime el pecho, te iras quebrando poco a poco. Y aunque eventualmente, la presión te haga explotar, esta será menos violenta, pero más destructiva…"
                     </blockquote>
                   </CardContent>
                 </Card>
@@ -266,7 +256,7 @@ export default function Home() {
                     "Poesía disfrazada de prosa. El autor captura la soledad 
                     urbana como nadie. Imprescindible."
                   </p>
-                  <p className="font-semibold text-charcoal">— Carmen R.</p>
+                  <p className="font-semibold text-charcoal">— Eslanny R.</p>
                 </CardContent>
               </Card>
             </motion.div>
@@ -275,7 +265,7 @@ export default function Home() {
       </section>
 
       {/* Author Section */}
-      <section id="author" className="py-24 concrete-gradient">
+      {/* <section id="author" className="py-24 concrete-gradient">
         <div className="container mx-auto px-4">
           <motion.div
             variants={staggerContainer}
@@ -353,7 +343,7 @@ export default function Home() {
             </div>
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       {/* Footer */}
       <footer className="bg-charcoal text-white py-20">
@@ -434,12 +424,12 @@ export default function Home() {
                   Contacto
                 </h4>
                 <div className="space-y-3 text-gray-300 font-light">
-                  <p>
+                  {/* <p>
                     <Mail className="w-4 h-4 inline mr-2" />
                     autor@ejemplo.com
-                  </p>
+                  </p> */}
                   <p>Editorial Independiente</p>
-                  <p>© 2024 Todos los derechos reservados</p>
+                  <p>© 2025 Todos los derechos reservados</p>
                 </div>
               </motion.div>
             </div>
@@ -449,7 +439,7 @@ export default function Home() {
               className="border-t border-gray-700 pt-8 text-center text-gray-400 font-light"
             >
               <p>
-                "Los milagros más hermosos son siempre los más tristes" 
+                "Ni la felicidad, ni la tristeza llegan de golpe. Son pequeñas fisuras y sanaciones que van jugueteando entre ellas tratando de ganarle a la otra" 
               </p>
             </motion.div>
           </motion.div>
