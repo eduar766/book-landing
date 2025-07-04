@@ -1,6 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter, Crimson_Text } from 'next/font/google';
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const crimsonText = Crimson_Text({ 
@@ -63,6 +64,17 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-C83924CSEY" />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-C83924CSEY');
+          `}
+        </Script>
+        
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
