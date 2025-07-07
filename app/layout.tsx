@@ -72,6 +72,14 @@ export default function RootLayout({
             gtag('js', new Date());
 
             gtag('config', 'G-C83924CSEY');
+            gtag('config', 'AW-17306834296');
+          `}
+        </Script>
+        <Script id="google-conversion" strategy="afterInteractive">
+          {`
+            gtag('event', 'conversion', {
+              'send_to': 'AW-17306834296/bkV_CPbDkesaEPiqxbxA'
+            });
           `}
         </Script>
         
